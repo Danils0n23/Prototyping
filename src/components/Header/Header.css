@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+  color: white;
+}
+
+/* Estilos para o logo */
+.logo-direction {
+  display: flex;
+  justify-content: center; /* Centraliza a logo horizontalmente */
+  align-items: center; /* Centraliza a logo verticalmente */
+}
+
+.logo {
+  width: 260px; /* Define o tamanho da logo em pixels */
+  height: auto; /* Mantém a proporção da imagem */
+  max-width: 100%; /* Garante que a logo não ultrapasse o tamanho da área disponível */
+  max-height: 100px; /* Define o tamanho máximo da altura da logo */
+}
+.btn-login {
+  text-decoration: none;
+  background-color: #0000;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .logo {
+    width: 120px; /* Ajusta o tamanho da logo para telas menores */
+    max-height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 100px; /* Ajusta ainda mais o tamanho da logo para telas pequenas */
+    max-height: 60px;
+  }
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu li:hover {
+  color: #ff4500;
+}

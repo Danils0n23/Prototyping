@@ -1,0 +1,8 @@
+.code-generator {
+  padding: 20px;
+}
+
+.code-generator pre {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
