@@ -12,12 +12,58 @@
   flex-direction: column;
   align-items: center;
   color: #333;
+  cursor: pointer;
 }
 
 .icon-wrapper svg {
   font-size: 40px;
   margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
+
+.icon-wrapper:hover svg {
+  color: inherit;
+}
+
+.icon-wrapper:nth-child(1):hover svg {
+  color: #61dafb;
+} /* React */
+.icon-wrapper:nth-child(2):hover svg {
+  color: #42b883;
+} /* Vue */
+.icon-wrapper:nth-child(3):hover svg {
+  color: #1572b6;
+} /* CSS3 */
+.icon-wrapper:nth-child(4):hover svg {
+  color: #06b6d4;
+} /* TailwindCSS */
+.icon-wrapper:nth-child(5):hover svg {
+  color: #f24e1e;
+} /* Figma */
+.icon-wrapper:nth-child(6):hover svg {
+  color: #f7b500;
+} /* Sketch */
+.icon-wrapper:nth-child(7):hover svg {
+  color: #ff61f6;
+} /* Adobe XD */
+.icon-wrapper:nth-child(8):hover svg {
+  color: #dd0031;
+} /* Angular */
+.icon-wrapper:nth-child(9):hover svg {
+  color: #ff3e00;
+} /* Svelte */
+.icon-wrapper:nth-child(10):hover svg {
+  color: #dad9d9;
+} /* Next.js */
+.icon-wrapper:nth-child(11):hover svg {
+  color: #00c58e;
+} /* Nuxt.js */
+.icon-wrapper:nth-child(12):hover svg {
+  color: #fc6d26;
+} /* GitLab */
+.icon-wrapper:nth-child(13):hover svg {
+  color: #ffffff;
+} /* GitHub */
 
 .icon-wrapper span {
   font-size: 14px;

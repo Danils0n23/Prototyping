@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   FaReact,
   FaVuejs,
@@ -38,10 +39,15 @@ const TechStack = () => {
   return (
     <div className="container">
       {icons.map((item, index) => (
-        <div className="icon-wrapper" key={index}>
+        <motion.div
+          className="icon-wrapper"
+          key={index}
+          whileHover={{ scale: 1.2 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
           {item.icon}
           <span>{item.name}</span>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
