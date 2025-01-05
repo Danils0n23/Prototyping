@@ -1,0 +1,83 @@
+.home-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  color: white;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.space-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.robot {
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente */
+  right: 0; /* Ajuste a posição horizontal conforme necessário */
+  transform: translateY(-50%); /* Centraliza o robô verticalmente */
+  max-width: 100%;
+  height: 80vh;
+  justify-items: end;
+  transition: opacity 0.8s ease; /* Para suavizar a transição */
+  object-fit: cover;
+}
+.robot:hover {
+  opacity: 0.5; /* Diminui a opacidade para 50% */
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%; /* O conteúdo ocupa a outra metade */
+  padding-left: 20px;
+}
+
+.text-section .welcome {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.text-section .animated-text {
+  font-size: 6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #e0e1e1, #0a0a0a);
+
+  /* Standard background-clip */
+  background-clip: text;
+
+  /* Vendor-specific background-clip for better compatibility */
+  -webkit-background-clip: text; /* Chrome, Safari */
+  -moz-background-clip: text; /* Firefox (Note: This is not fully supported by all versions of Firefox) */
+
+  /* Text fill for transparency effect */
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* For compatibility with browsers not supporting -webkit-text-fill-color */
+
+  animation: glow 2s infinite alternate;
+}
+
+.text-section .description {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 20px;
+  line-height: 1.8;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
