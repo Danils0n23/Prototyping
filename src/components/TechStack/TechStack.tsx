@@ -46,7 +46,7 @@ const TechStack = () => {
           transition={{ type: "spring", stiffness: 300 }}
         >
           {item.icon}
-          <span>{item.name}</span>
+          <span className="color">{item.name}</span>
         </motion.div>
       ))}
     </div>
