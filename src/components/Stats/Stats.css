@@ -1,0 +1,20 @@
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 20px;
+  color: #cfdad5; /* Cor do texto */
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem; /* Tamanho da fonte para o número */
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 1rem; /* Tamanho da fonte para o rótulo */
+}

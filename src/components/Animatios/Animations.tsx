@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import AnimatedText from "@/components/Animated/AnimatedText";
-import AnimatedDescription from "@/components/Animated/AnimatedDescription";
+import AnimatedText from "@/components/Animate/AnimatedText";
+import AnimatedDescription from "@/components/Animate/AnimatedDescription";
 import { motion } from "framer-motion";
 import "./Animations.css";
 import robotImage from "../../../public/robot.png";

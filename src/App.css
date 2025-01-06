@@ -1,13 +1,74 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* Garantir que o box-sizing seja aplicado a todos os elementos */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  background-color: #000000;
-  color: white; /* Adicionado para garantir contraste */
 }
 
+html,
+body {
+  height: 100%; /* Garantir que o body ocupe 100% da altura da janela */
+  width: 100%;
+  margin: 0; /* Remover margens padrão */
+  padding: 0; /* Remover padding padrão */
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: white; /* Garantir contraste */
+}
+
+body {
+  height: 100vh; /* Definindo a altura do body como 100% da altura da janela */
+  display: flex;
+  flex-direction: column; /* Garantir que o conteúdo seja empilhado verticalmente */
+}
+
+/* Estilos para o conteúdo */
+main {
+  flex-grow: 1; /* Garantir que o conteúdo principal ocupe o restante do espaço disponível */
+}
+
+/* Estilos para títulos */
 h1,
 h2 {
   color: #333;
+}
+.container1 {
+  width: 100%;
+}
+/* Responsividade para telas pequenas (por exemplo, dispositivos móveis) */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+}
+
+/* Responsividade para tablets (telas médias) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 19px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 22px;
+  }
 }

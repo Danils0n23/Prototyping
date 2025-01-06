@@ -5,18 +5,31 @@ import Editor from "./pages/Editor";
 import Settings from "./pages/Settings";
 import Header from "./components/Header/Header";
 import { AppProvider } from "./context/AppContext";
-import "./App.css";
+import "./App.css"; // Certifique-se de que o CSS está importado
+import Footer from "./components/Footer/Footer";
 
 const App: React.FC = () => {
   return (
     <AppProvider>
       <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/editor" element={<Editor />} />
-          <Route path="/settings" element={<Settings />} />
-        </Routes>
+        {/* Cabeçalho */}
+
+        {/* Container principal */}
+        <div className="container1">
+          <Header />
+
+          {/* Conteúdo das rotas */}
+          <div className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/editor" element={<Editor />} />
+              <Route path="/settings" element={<Settings />} />
+            </Routes>
+          </div>
+
+          {/* Rodapé */}
+          <Footer />
+        </div>
       </Router>
     </AppProvider>
   );

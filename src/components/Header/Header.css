@@ -1,52 +1,41 @@
+/* Estilos Gerais */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 20px;
+  padding: 15px 20px;
   color: white;
+  position: relative;
+  width: 100%;
 }
 
-/* Estilos para o logo */
+/* Logo */
 .logo-direction {
   display: flex;
-  justify-content: center; /* Centraliza a logo horizontalmente */
-  align-items: center; /* Centraliza a logo verticalmente */
+  justify-content: flex-start; /* Alinha o logo à esquerda */
+  align-items: center;
+  width: 100%;
 }
 
 .logo {
-  width: 260px; /* Define o tamanho da logo em pixels */
-  height: auto; /* Mantém a proporção da imagem */
-  max-width: 100%; /* Garante que a logo não ultrapasse o tamanho da área disponível */
-  max-height: 100px; /* Define o tamanho máximo da altura da logo */
-}
-.btn-login {
-  text-decoration: none;
-  background-color: #0000;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+  max-height: 80px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .logo {
-    width: 120px; /* Ajusta o tamanho da logo para telas menores */
-    max-height: 80px;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    width: 100px; /* Ajusta ainda mais o tamanho da logo para telas pequenas */
-    max-height: 60px;
-  }
+/* Estilos para o menu */
+.navbar {
+  width: 100%;
 }
 
 .menu {
   list-style: none;
   display: flex;
   gap: 20px;
+  justify-content: center; /* Centraliza os itens no meio */
+  align-items: center;
+  width: 100%;
 }
 
 .menu li {
@@ -54,6 +43,104 @@
   transition: color 0.3s;
 }
 
+/* Flex para posicionar o último item na direita */
+.menu li:last-child {
+  margin-left: auto; /* Empurra o último item para a direita */
+}
+
 .menu li:hover {
-  color: #ff4500;
+  color: #4a484d;
+}
+
+/* Estilo para quando o menu estiver aberto */
+.menu.open {
+  display: flex; /* O menu ficará visível quando a classe "open" for adicionada */
+}
+
+/* Estilos para o botão Login */
+.menu .btn-login {
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu .btn-login:hover {
+  color: #4a484d;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Botão hambúrguer */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Ajustes na estrutura da header */
+  .header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 475px;
+  }
+
+  .logo-direction {
+    justify-content: space-between;
+    width: 600vh;
+  }
+
+  .logo {
+    width: 260px;
+    height: auto;
+    max-width: 100%;
+    max-height: 60px;
+    padding: 8px;
+  }
+
+  /* Ajustes na navbar e menu */
+  .navbar {
+    width: 100%;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+    display: none; /* Menu começa oculto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .menu.open {
+    display: flex; /* Menu visível quando a classe "open" é aplicada */
+  }
+
+  .menu li {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  /* Exibir o botão hambúrguer ao lado do logo */
+  .hamburger {
+    display: flex;
+    margin-left: 20px; /* Espaçamento entre o logo e o hambúrguer */
+  }
 }

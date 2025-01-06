@@ -1,0 +1,155 @@
+.testimonial-container {
+  border: 1px solid rgb(107, 99, 99);
+  color: white;
+  padding: 2rem;
+  border-radius: 30px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-content {
+  margin-bottom: 1.5rem;
+}
+
+.quote-icon {
+  font-size: 11rem;
+  color: #ffffff;
+  margin-bottom: -6rem;
+}
+
+.testimonial-text {
+  font-size: 2.125rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.profile-image {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.profile-text {
+  text-align: left;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.profile-title {
+  color: gray;
+}
+
+.navigation-arrows {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-button {
+  padding: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 50%;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: gray;
+}
+/* Mobile Devices (up to 600px) */
+@media (max-width: 600px) {
+  .testimonial-container {
+    padding: 1rem;
+    border-radius: 30px;
+    max-width: 90%;
+    margin-right: 33px;
+  }
+
+  .quote-icon {
+    font-size: 7rem;
+    margin-bottom: -4rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.5rem;
+  }
+
+  .profile-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .profile-image {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .nav-button {
+    padding: 0.3rem;
+  }
+}
+
+/* Tablets (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .testimonial-container {
+    padding: 1rem;
+    border-radius: 30px;
+    max-width: 95%;
+  }
+
+  .quote-icon {
+    font-size: 9rem;
+    margin-bottom: -5rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.75rem;
+  }
+
+  .profile-image {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .nav-button {
+    padding: 0.4rem;
+  }
+}
+
+/* Larger Screens (1025px and up) */
+@media (min-width: 1025px) {
+  .testimonial-container {
+    padding: 1rem;
+    border-radius: 30px;
+    max-width: 800px;
+  }
+
+  .quote-icon {
+    font-size: 11rem;
+    margin-bottom: -6rem;
+  }
+
+  .testimonial-text {
+    font-size: 2.125rem;
+  }
+
+  .profile-image {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .nav-button {
+    padding: 0.5rem;
+  }
+}

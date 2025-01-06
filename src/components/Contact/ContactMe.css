@@ -1,0 +1,123 @@
+.contact-container {
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+.small-text {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: rgb(255, 255, 255);
+}
+
+.outlined {
+  font-weight: normal;
+  font-size: 72px;
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
+.arrow {
+  font-size: 1.875rem;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  margin-top: -4.6875rem; /* Melhor uso de rem */
+  margin-left: 1030px;
+}
+
+.contact-button {
+  margin-top: 20px;
+  padding: 6px 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: gray;
+}
+
+.button-arrow {
+  font-size: 1.25rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 1.875rem;
+  padding: 2px 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+/* Efeito de hover */
+.button-arrow:hover {
+  background-color: #333; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Pequeno efeito de zoom */
+}
+
+/* Efeito de foco para acessibilidade */
+.button-arrow:focus {
+  outline: 2px solid #fff; /* Indica foco */
+  outline-offset: 4px;
+}
+/* Ajustes para telas menores (Max-width: 768px) */
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px; /* Reduz o tamanho do título em telas menores */
+  }
+
+  .outlined {
+    font-size: 36px; /* Reduz o tamanho do texto contornado */
+  }
+
+  .arrow {
+    font-size: 1.25rem;
+    margin-left: 219px;
+    margin-top: -32px;
+  }
+
+  .contact-button {
+    padding: 10px 20px; /* Ajusta o tamanho do botão */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+  }
+
+  .button-arrow {
+    font-size: 1rem; /* Reduz o tamanho da seta do botão */
+    padding: 6px 12px; /* Ajusta o padding */
+  }
+}
+
+/* Ajustes para telas muito pequenas (Max-width: 480px) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px; /* Ajusta o tamanho do título para telas muito pequenas */
+  }
+
+  .outlined {
+    font-size: 28px; /* Ajusta o tamanho do texto contornado para telas muito pequenas */
+  }
+
+  .arrow {
+    font-size: 1.25rem;
+    margin-left: 219px;
+    margin-top: -32px;
+  }
+
+  .contact-button {
+    padding: 8px 16px; /* Ajusta o tamanho do botão */
+    font-size: 14px; /* Ajusta a fonte para telas muito pequenas */
+  }
+
+  .button-arrow {
+    font-size: 0.9rem; /* Reduz o tamanho da seta do botão */
+    padding: 5px 10px; /* Ajusta o padding para telas pequenas */
+  }
+}
